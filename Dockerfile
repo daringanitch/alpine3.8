@@ -12,9 +12,8 @@ RUN apk update && \
  
         pip install --upgrade pip
 
-WORKDIR /app
+WORKDIR /app/dockshare/rocksdb
 
-RUN mkdir -p /app/dockshare/rocksdb
-RUN mkdir -p /app/dockshare/rocksdb/logs
-RUN mkdir -p /app/dockshare/rocksdb/wal_dir
+RUN mkdir logs
+RUN mkdir wal_dir
 
