@@ -14,6 +14,7 @@ RUN apk update && \
 
 WORKDIR /app
 
-RUN mkdir /app/dockshare/rocksdb
-RUN mkdir /app/dockshare/rocksdb/logs
-RUN mkdir /app/dockshare/rocksdb/wal_dir
+RUN mkdir -p /app/dockshare/rocksdb
+RUN mkdir -p /app/dockshare/rocksdb/logs
+RUN mkdir -p /app/dockshare/rocksdb/wal_dir
+
